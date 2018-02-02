@@ -8,7 +8,7 @@ OBJ = $(SRC:.cu=.o)
 DEPS = 
 
 all:${TARGET}
-    echo "Done!"
+	echo "Done!"
 
 ${TARGET}:${OBJ}
 	nvcc -o $@ $^ $(LDFLAGS)
